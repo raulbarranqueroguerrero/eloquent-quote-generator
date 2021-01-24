@@ -9,7 +9,6 @@
 
 body {
   box-sizing: inherit;
-  display: flex;
 }
 
 #app {
@@ -25,8 +24,8 @@ body {
 
 #quote-box {
   background: #fff;
-  width: 40rem;
-  margin: 10rem auto;
+  width: 5rem auto;
+  margin: 10rem;
   padding: 3rem;
   border-radius: 5px;
 }
