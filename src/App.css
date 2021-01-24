@@ -8,8 +8,18 @@
 }
 
 body {
-  font-family: 'Nunito', sans-serif;
-  background: #0059ff
+  box-sizing: inherit;
+}
+
+#app {
+  font-family: sans-serif;
+  background-color: var(--app-background);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #quote-box {
@@ -44,7 +54,7 @@ body {
 
 .social-media > a {
   margin-right: .5rem;
-  background: #0059ff;
+  background-color: var(--app-background);
   padding: .3rem .5rem;
   cursor: pointer;
   border-radius: 3px;
@@ -59,7 +69,7 @@ body {
 }
 
 #new-quote {
-  background: #0059ff;
+  background-color: var(--app-background);
   border: none;
   color: #fff;
   padding: .7rem 1rem;
