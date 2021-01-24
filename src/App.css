@@ -9,6 +9,7 @@
 
 body {
   box-sizing: inherit;
+  display: flex;
 }
 
 #app {
