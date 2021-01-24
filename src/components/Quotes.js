@@ -6,7 +6,7 @@ const Quotes = () => {
     const [quote, setQuote] = useState('')
     const [author, setAuthor] = useState('')
     const [hex, setHex] = useState('#82FFF3')
-
+    console.log(hex)
     useEffect(() => {
         getQuote()
         randomHex()
