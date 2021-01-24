@@ -14,7 +14,7 @@ const Quotes = () => {
 
     const randomHex = () => {
         const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
-        setHex(randomColor)
+        setHex(randomColor === '#ffffff' ? '#384726' : randomColor)
     }
 
     const getQuote = () => {
