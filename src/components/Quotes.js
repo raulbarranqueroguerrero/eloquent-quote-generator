@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import twitterIcon from '../twitter.svg'
-import tumblrIcon from '../tumblr.svg'
+import githubIcon from '../github.svg'
 import {readableColors} from './readableColors'
 
 const Quotes = () => {
@@ -43,22 +43,26 @@ const Quotes = () => {
                  <div id="text">
                     <p>{quote}</p>
                     <div id="author">{author}</div>
-                    <div id="buttons">
+                    <div tumblrIconid="buttons">
                         <div className="social-media">
-                            <a      
+                            <a    
+                                target='_blanck'   
                                 href={`https://twitter.com/intent/tweet?text=${quote}-${author}`}
                                 id="tweet-quote">
                                 <span>
                                     <img src={twitterIcon} alt=""/>
                                 </span>
                             </a>
-                            <a href="https://www.tumblr.com/widgets/share/tool" id="tumblr-quote">
+                            <a 
+                                target='_blanck' 
+                                href="https://github.com/raulbarranqueroguerrero/eloquent-quote-generator" id="tumblr-quote">
                                 <span>
-                                    <img src={tumblrIcon} alt=""/>
+                                    <img src={githubIcon} alt=""/>
                                 </span>
                             </a>
+                            <button onClick={handleClick} id="new-quote">New Quote</button>
+
                         </div>
-                        <button onClick={handleClick} id="new-quote">New Quote</button>
                     </div>
                 </div>
             </div>
