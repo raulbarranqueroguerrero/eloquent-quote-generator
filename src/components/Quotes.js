@@ -36,7 +36,7 @@ const Quotes = () => {
         getQuote()
         setHex(randomHex)
     }
-    console.log(hex)
+    
     return (
         <div id="app" style={{"--app-background": `${hex}`}}>
             <div id="quote-box">
