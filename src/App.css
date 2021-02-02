@@ -59,7 +59,9 @@ body {
 }
 
 .social-media > a {
-  margin-right: .5rem;
+  margin-right: .6rem;
+  margin-bottom: .4rem;
+  margin-top: .7rem;
   background-color: var(--app-background);
   padding: .3rem .5rem;
   cursor: pointer;
@@ -80,8 +82,11 @@ body {
 #new-quote {
   background-color: var(--app-background);
   border: none;
+  height: 3.2rem;
   color: #fff;
-  padding: .7rem 1rem;
+  padding: .5rem 1rem;
+  position: relative;
+  top: .7rem;
   font-size: .9rem;
   font-weight: bold;
   border-radius: 2px;

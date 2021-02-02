@@ -1,20 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import twitterIcon from '../twitter.svg'
-import tumblrIcon from '../tumblr.svg'
+import githubIcon from '../github.svg'
+import {readableColors} from './readableColors'
 
 const Quotes = () => {
     const [quote, setQuote] = useState('')
     const [author, setAuthor] = useState('')
     const [hex, setHex] = useState('#82FFF3')
-    console.log(hex)
-    useEffect(() => {
-        getQuote()
-        randomHex()
-    }, [])
 
     const randomHex = () => {
-        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
-        setHex(randomColor === '#ffffff' ? '#384726' : randomColor)
+        const values = Object.values(readableColors)
+        const randomColor = '#' + values[parseInt(Math.random()* values.length)]
+        return randomColor
     }
 
     const getQuote = () => {
@@ -29,33 +26,42 @@ const Quotes = () => {
                 setAuthor(randomQuote.author)
             })
     }
-    const handleClick = () => {
+
+    useEffect(() => {
         getQuote()
         randomHex()
-    }
+    }, [])
 
+    function handleClick() {
+        getQuote()
+        setHex(randomHex)
+    }
+    
     return (
         <div id="app" style={{"--app-background": `${hex}`}}>
             <div id="quote-box">
                  <div id="text">
                     <p>{quote}</p>
                     <div id="author">{author}</div>
-                    <div id="buttons">
+                    <div tumblrIconid="buttons">
                         <div className="social-media">
-                            <a      
+                            <a    
+                                target='_blanck'   
                                 href={`https://twitter.com/intent/tweet?text=${quote}-${author}`}
                                 id="tweet-quote">
                                 <span>
                                     <img src={twitterIcon} alt=""/>
                                 </span>
                             </a>
-                            <a href="https://www.tumblr.com/widgets/share/tool" id="tumblr-quote">
+                            <a 
+                                target='_blanck' 
+                                href="https://github.com/raulbarranqueroguerrero/eloquent-quote-generator" id="tumblr-quote">
                                 <span>
-                                    <img src={tumblrIcon} alt=""/>
+                                    <img src={githubIcon} alt=""/>
                                 </span>
                             </a>
+                            <button onClick={handleClick} id="new-quote">New Quote</button>
                         </div>
-                        <button onClick={handleClick} id="new-quote">New Quote</button>
                     </div>
                 </div>
             </div>
