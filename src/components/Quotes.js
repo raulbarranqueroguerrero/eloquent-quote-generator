@@ -1,20 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import twitterIcon from '../twitter.svg'
 import tumblrIcon from '../tumblr.svg'
+import {readableColors} from './readableColors'
 
 const Quotes = () => {
     const [quote, setQuote] = useState('')
     const [author, setAuthor] = useState('')
     const [hex, setHex] = useState('#82FFF3')
-    console.log(hex)
-    useEffect(() => {
-        getQuote()
-        randomHex()
-    }, [])
 
     const randomHex = () => {
-        const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16)
-        setHex(randomColor === '#ffffff' ? '#384726' : randomColor)
+        const values = Object.values(readableColors)
+        const randomColor = '#' + values[parseInt(Math.random()* values.length)]
+        return randomColor
     }
 
     const getQuote = () => {
@@ -29,11 +26,17 @@ const Quotes = () => {
                 setAuthor(randomQuote.author)
             })
     }
-    const handleClick = () => {
+
+    useEffect(() => {
         getQuote()
         randomHex()
-    }
+    }, [])
 
+    function handleClick() {
+        getQuote()
+        setHex(randomHex)
+    }
+    console.log(hex)
     return (
         <div id="app" style={{"--app-background": `${hex}`}}>
             <div id="quote-box">
