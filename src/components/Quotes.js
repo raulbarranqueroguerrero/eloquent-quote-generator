@@ -61,7 +61,6 @@ const Quotes = () => {
                                 </span>
                             </a>
                             <button onClick={handleClick} id="new-quote">New Quote</button>
-
                         </div>
                     </div>
                 </div>
