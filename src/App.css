@@ -100,3 +100,10 @@ body {
 #new-quote:hover {
   opacity: .9;
 }
+
+
+.raul {
+  background-color: blueviolet;
+  border-radius: 25%;
+  color: white;
+}
