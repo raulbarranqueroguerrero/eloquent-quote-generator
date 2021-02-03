@@ -44,6 +44,7 @@ body {
   justify-content: flex-end;
   font-size: 1.2rem;
   margin-top: 1.2rem;
+  margin-bottom: .5rem;
 }
 
 #buttons {
@@ -72,7 +73,7 @@ body {
 }
 
 .social-media > a:hover {
-  opacity: .9;
+  opacity: .8;
 }
 
 .social-media > a img {
@@ -90,7 +91,6 @@ body {
   font-size: .9rem;
   font-weight: bold;
   border-radius: 2px;
-  outline: none;
   cursor: pointer;
   border-color: black;
   border-width: .15rem;

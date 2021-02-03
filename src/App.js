@@ -4,7 +4,7 @@ import MusicPlayer from './components/MusicPlayer'
 
 function App() {
   return (
-    <div>
+     <div>
       <Quotes/>
       <MusicPlayer/>
     </div>

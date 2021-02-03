@@ -8,12 +8,6 @@ const Quotes = () => {
     const [author, setAuthor] = useState('')
     const [hex, setHex] = useState('#82FFF3')
 
-    const randomHex = () => {
-        const values = Object.values(readableColors)
-        const randomColor = '#' + values[parseInt(Math.random()* values.length)]
-        return randomColor
-    }
-
     const getQuote = () => {
         let url = `https://gist.githubusercontent.com/camperbot/5a022b72e96c4c9585c32bf6a75f62d9/raw/e3c6895ce42069f0ee7e991229064f167fe8ccdc/quotes.json`
         fetch(url)
@@ -27,15 +21,21 @@ const Quotes = () => {
             })
     }
 
-    useEffect(() => {
-        getQuote()
-        randomHex()
-    }, [])
+    const randomHex = () => {
+        const values = Object.values(readableColors)
+        const randomColor = '#' + values[parseInt(Math.random()* values.length)]
+        return randomColor
+    }
 
     function handleClick() {
         getQuote()
         setHex(randomHex)
     }
+    
+    useEffect(() => {
+        getQuote()
+        randomHex()
+    }, [])
     
     return (
         <div id="app" style={{"--app-background": `${hex}`}}>
