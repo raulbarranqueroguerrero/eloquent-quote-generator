@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import MusicPlayer from './MusicPlayer'
 import twitterIcon from '../twitter.svg'
 import githubIcon from '../github.svg'
 import {readableColors} from './readableColors'
@@ -38,7 +39,7 @@ const Quotes = () => {
     }, [])
     
     return (
-        <div id="app" style={{"--app-background": `${hex}`}}>
+        <div id="quote-app" style={{"--app-background": `${hex}`}}>
             <div id="quote-box">
                  <div id="text">
                     <p>{quote}</p>

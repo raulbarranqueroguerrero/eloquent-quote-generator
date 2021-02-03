@@ -8,7 +8,7 @@ const { PlayPause,
     Volume
 } = controls
 
-function MusicPlayer(props) {
+function MusicPlayer() {
     
     return (
         <Media>
@@ -16,15 +16,15 @@ function MusicPlayer(props) {
                 <div className="media-player">
                     <Player src={`audio/hello.mp3`} />
                 </div>
-                <div className="media-controls">
-                    <PlayPause className="media-control media-control--play-pause raul" />
-                    <CurrentTime className="media-control media-control--current-time raul" />
-                    <SeekBar className="media-control media-control--volume-range raul" />
-                    <Duration className="media-control media-control--duration raul" />
-                    <MuteUnmute className="media-control media-control--mute-unmute raul" />
-                    <Volume className="media-control media-control--volume raul" />
+                    <div className="media-control">
+                        <PlayPause className="play-pause" />
+                        <CurrentTime className="current-time-button media-control media-control-current-time raul" />
+                        <SeekBar className="media-control media-control--volume-range " />
+                        <Duration className="media-control media-control--duration " />
+                        <MuteUnmute className="media-control media-control--mute-unmute " />
+                        <Volume className="media-control media-control--volume" />
+                    </div>
                 </div>
-            </div>
         </Media>
     )
 }

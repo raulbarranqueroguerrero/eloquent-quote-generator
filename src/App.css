@@ -12,10 +12,15 @@ body {
 }
 
 #app {
-  font-family: sans-serif;
-  background-color: var(--app-background);
   width: 100vw;
   height: 100vh;
+}
+
+#quote-app {
+  font-family: sans-serif;
+  background-color: var(--app-background);
+  width: 100%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +36,6 @@ body {
   border-color: black;
   border-width: .2rem;
   border-style: solid;
-
 }
 
 #text {
@@ -101,9 +105,15 @@ body {
   opacity: .9;
 }
 
+.media-control {
+  display: flex;
+  justify-content: space-around;
+  margin-top: .8rem;
+}
 
-.raul {
-  background-color: blueviolet;
-  border-radius: 25%;
-  color: white;
+.play-pause {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2.4rem;
+  margin-top: .3rem;
 }
