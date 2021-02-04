@@ -1,13 +1,5 @@
 const audioList = [
    {
-      name: 'Funny Valentine',
-      singer: 'Chet Buker',
-      cover:
-      'https://firebasestorage.googleapis.com/v0/b/host-medias-b0b6d.appspot.com/o/Chet-140png.png?alt=media&token=f5638ee0-36ac-4e10-8844-0f9af88634cc',
-      musicSrc:
-      'https://firebasestorage.googleapis.com/v0/b/host-medias-b0b6d.appspot.com/o/yt1s.com%20-%20Chet%20Baker%20%20My%20Funny%20Valentine.mp3?alt=media&token=1e0b6fbf-6342-4b88-91d0-51a04db0510c'
-   },
-   {
       name: 'Freddie Freeloader',
       singer: 'Miles Davis',
       cover:
