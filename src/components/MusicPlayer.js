@@ -11,6 +11,7 @@ function MusicPlayer() {
             style={{fontFamily: 'sans-serif', fontWeight: 'bolder'}}
             autoplay={true}
             glassBg={true}
+            preload={true}
         />
     )
 }
