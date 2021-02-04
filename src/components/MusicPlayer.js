@@ -7,7 +7,7 @@ function MusicPlayer() {
     return (
         <ReactJkMusicPlayer 
             audioLists={audioList}
-            defaultPosition={{top: 8, left: 8}}
+            defaultPosition={{top: 8, left: 7}}
             style={{fontFamily: 'sans-serif', fontWeight: 'bolder'}}
             autoplay={true}
             glassBg={true}
