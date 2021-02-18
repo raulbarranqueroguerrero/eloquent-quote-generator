@@ -5,13 +5,13 @@ import audioList from './audioList'
 function MusicPlayer() {
     
     return (
-        <ReactJkMusicPlayer 
+        <ReactJkMusicPlayer
             audioLists={audioList}
-            defaultPosition={{top: 8, left: 7}}
+            defaultPosition={{top: 8, left: 8}}
             style={{fontFamily: 'sans-serif', fontWeight: 'bolder'}}
-            autoplay={true}
+            defaultVolume={0.2}
+            autoPlay={false}
             glassBg={true}
-            preload={true}
         />
     )
 }
