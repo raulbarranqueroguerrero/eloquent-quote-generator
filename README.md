@@ -22,6 +22,11 @@ A ReactJS based random quote generator. It includes a built-in music player fetc
 
 Lijinke - [React Music Player](https://github.com/lijinke666/react-music-player)
 
+Miles Davis - [Freddie Freeloader](https://www.youtube.com/watch?v=ZZcuSBouhVA&ab_channel=MilesDavisVEVO)
+
+Charlie Parker - [Bird and Diz](https://www.youtube.com/watch?v=ovCpL1zjBgI&t=12s&ab_channel=ClassicMoodExperience)
+
+
 
 
 
