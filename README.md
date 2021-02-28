@@ -4,9 +4,9 @@
 
 ### [LIVE DEMO](https://eloquentquote.netlify.app/)
 
-### React Random Quote Generator
+#### React Random Quote Generator
 
-A ReactJS based random quote generator. It includes a built-in music player fetched by axios and Firebase data storage. Developed using React hooks and latest.
+A ReactJS based random quote generator. It includes a built-in music player fetched by axios and Firebase data storage. Developed using React hooks.
 
 ## Features
 
